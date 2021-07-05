@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">-->
+</head>
+<body>
+    <div class="container">
+        <h2>Hello Everyone!</h2>
+        <h4>Fill up this form,let's connect with each other</h4>
+        <h3>Contact Information:</h3>
+        <form action="/action_page.php" target="_self" method="post">
+            <div class="detail">
+                <label for="firstname">First Name* :</label>
+                <input type="text" id="firstname" name="firstname" size="15" required>
+
+                <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" name="lastname" size="15"> <br>
+
+                <label for="email">Email* :</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="linkedin">Linkedin/Twitter*<span class="comment">(We will connect)</span></label>
+                <input type="text" id="linkedin" name="linkedin" size="40" required><br>
+            </div>
+
+            <p id="language">Programming language of expertise : </p>
+
+            <div class="language">
+                <p> 
+                    <input type="checkbox" id="html" name="language"> 
+                    <label for="html">HTML</label>
+                </p>
+                    
+                <p> 
+                    <input type="checkbox" id="css" name="language"> 
+                    <label for="css">CSS</label>
+                </p>
+                    
+                <p> 
+                    <input type="checkbox" id="JavaScript" name="language"> 
+                    <label for="javascript">JavaScript</label>
+                </p>
+
+                <p> 
+                    <input type="checkbox" id="Python" name="language"> 
+                    <label for="python">Python</label>
+                </p>
+
+                <p> 
+                    <input type="checkbox" id="C++" name="language">
+                    <label for="c++">C++</label>
+                </p>
+
+                <p> 
+                    <input type="checkbox" id="Java" name="language">
+                    <label for="java">Java</label>
+                </p>
+                <p> 
+                    <input type="checkbox" id="other" name="language">
+                    <label for="other">Other</label>
+                </p><br>
+            </div>
+
+            <p id="framework">Framework of expertise : </p>
+
+            <div class="framework">
+                <p> 
+                    <input type="checkbox" id="tailwind-css" name="framework">
+                    <label for="html">Tailwind CSS</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="react" name="framework">
+                    <label for="css">React</label>
+                </p>
+                
+                <p>
+                    <input type="checkbox" id="vue-js" name="framework">
+                    <label for="javascript">Vue-Js</label>
+                </p>
+                
+                <p>
+                    <input type="checkbox" id="react-native" name="framework">
+                    <label for="python">React Native</label>
+                </p>
+                <p> 
+                    <input type="checkbox" id="other" name="framework">
+                    <label for="other">Other</label>
+                </p><br>
+            </div>
+
+            <div class="button">
+                <input type="submit" id="submit" value="Submit">     <input type="reset" id="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p class="name">Anurag Nigam</p><br>
+        <a href="https://twitter.com/anuraga091">Twitter</a>
+        <a href="https://linkedin.com/in/anuraga091">Linkedin</a>
+        <a href="mailto: anuraga091@gmail.com">Email</a>
+        <a href="tel: +918318824899">Phone</a>
+    </footer>
+</body>
+</html>

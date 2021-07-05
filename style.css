@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+body{
+    background-color: rgb(234, 236, 241);
+    font-family: 'Roboto', sans-serif;
+    margin: 5%;
+    font-weight: 100;
+}
+p{
+    font-weight: 200;
+}
+h2{
+    margin-top: 1%;
+    font-weight: 600;
+}
+h3{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-weight: 500;
+}
+h4{
+    margin-top: 1%;
+    font-weight: 200;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.comment{
+    font-size: 11px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#language{
+    margin-top: 0.5%;
+}
+.language{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#framework{
+    margin-top: 0.5%;
+}
+.framework{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#submit{
+    background-color: aqua;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#reset{
+    background-color: aqua;
+    padding: 10px 23px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.name{
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 568px) {
+    h3{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-weight: 500;
+    }
+    .detail{
+        display: inline-block;    
+    }
+    #email{
+        margin-top: 15px;
+    }
+    #linkedin{
+        margin-top: 15px;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #submit{
+        margin-left: 2%;
+    }
+    #reset{
+        margin-left: 10%;
+    }
+    .name{
+        margin-top: 2%;
+    }
+}
