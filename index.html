@@ -11,59 +11,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">-->
 </head>
 <body>
+    <!-- ---------------------------------------Greeting ----------------------------------------------------->
     <div class="container">
         <h2>Hello Everyone!</h2>
         <h4>Fill up this form,let's connect with each other</h4>
+        <!-- -----------------------------------Personal details ----------------------------------------------------->
         <h3>Contact Information:</h3>
         <form name="survey_form" data-netlify="true" target="_self" method="post">
             <div class="detail">
                 <label for="firstname">First Name* :</label>
-                <input type="text" id="firstname" name="firstname" size="15" required>
+                <input type="text" id="firstname" name="firstname" placeholder="Your first name...." size="15" required>
 
                 <label for="lastname">Last Name :</label>
-                <input type="text" id="lastname" name="lastname" size="15"> <br>
+                <input type="text" id="lastname" name="lastname" placeholder="Your last name.,.." size="15"> <br>
 
                 <label for="email">Email* :</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="text" id="email" name="email" placeholder="Your email id...." required><br>
 
                 <label for="linkedin">Linkedin/Twitter*<span class="comment">(We will connect)</span></label>
-                <input type="text" id="linkedin" name="linkedin" size="40" required><br>
+                <input type="text" id="linkedin" name="linkedin" size="40" placeholder="Your twitter/linkedin link...." required><br>
             </div>
-
+ <!------------------------------------------Checkboxes for more detail ----------------------------------------------------->
             <p id="language">Programming language of expertise : </p>
 
             <div class="language">
                 <p> 
-                    <input type="checkbox" id="html" name="language"> 
+                    <input type="checkbox" id="html" value="html" name="language"> 
                     <label for="html">HTML</label>
                 </p>
                     
                 <p> 
-                    <input type="checkbox" id="css" name="language"> 
+                    <input type="checkbox" id="css" value="css" name="language"> 
                     <label for="css">CSS</label>
                 </p>
                     
                 <p> 
-                    <input type="checkbox" id="JavaScript" name="language"> 
+                    <input type="checkbox" id="JavaScript" value="javascript" name="language"> 
                     <label for="javascript">JavaScript</label>
                 </p>
 
                 <p> 
-                    <input type="checkbox" id="Python" name="language"> 
+                    <input type="checkbox" id="Python" value="python" name="language"> 
                     <label for="python">Python</label>
                 </p>
 
                 <p> 
-                    <input type="checkbox" id="C++" name="language">
+                    <input type="checkbox" id="C++" value="c++" name="language">
                     <label for="c++">C++</label>
                 </p>
 
                 <p> 
-                    <input type="checkbox" id="Java" name="language">
+                    <input type="checkbox" id="Java" value="java" name="language">
                     <label for="java">Java</label>
                 </p>
                 <p> 
-                    <input type="checkbox" id="other" name="language">
+                    <input type="checkbox" id="other" value="other" name="language">
                     <label for="other">Other</label>
                 </p><br>
             </div>
@@ -72,35 +74,42 @@
 
             <div class="framework">
                 <p> 
-                    <input type="checkbox" id="tailwind-css" name="framework">
+                    <input type="checkbox" id="tailwind-css" value="tailwind-css" name="framework">
                     <label for="html">Tailwind CSS</label>
                 </p>
 
                 <p>
-                    <input type="checkbox" id="react" name="framework">
+                    <input type="checkbox" id="react" value="react" name="framework">
                     <label for="css">React</label>
                 </p>
                 
                 <p>
-                    <input type="checkbox" id="vue-js" name="framework">
-                    <label for="javascript">Vue-Js</label>
+                    <input type="checkbox" id="vue.js" value="vue.js" name="framework">
+                    <label for="javascript">Vue.js</label>
                 </p>
                 
                 <p>
-                    <input type="checkbox" id="react-native" name="framework">
+                    <input type="checkbox" id="react-native" value="react-native" name="framework">
                     <label for="python">React Native</label>
                 </p>
                 <p> 
-                    <input type="checkbox" id="other" name="framework">
+                    <input type="checkbox" id="other" value="other" name="framework">
                     <label for="other">Other</label>
                 </p><br>
             </div>
-
+            <!------------------------------------------textarea for feedback ----------------------------------------------------->
+            <div class="textarea">
+            <label for="feedback">How's this form,help me with feedback</label>
+            <textarea name="feedback" id="feedback" cols="45" rows="5" placeholder="Enter your comment here..."></textarea>
+            </div>
+<!------------------------------------------Submit and Reset button ----------------------------------------------------->
             <div class="button">
                 <input type="submit" id="submit" value="Submit">     <input type="reset" id="reset" value="Reset">
             </div>
+            
         </form>
     </div>
+    <!------------------------------------------My personal detail ----------------------------------------------------->
     <footer>
         <p class="name">Anurag Nigam</p><br>
         <a href="https://twitter.com/anuraga091">Twitter</a>

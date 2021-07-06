@@ -30,6 +30,19 @@ a{
     margin-right: 15px;
     font-weight: bold;
 }
+input{
+    border: 1px;
+    border-radius: 8px;
+    margin: 0.2em;
+    padding: 0.4em;
+}
+#firstname,#lastname,#email,#linkedin{
+    width: 60%;
+}
+textarea{
+    border: 1px;
+    border-radius: 10px;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -61,6 +74,9 @@ a{
     flex-direction: column;
     justify-content: space-around;
 }
+#feedback{
+    margin-top: 0.3em;
+}
 .button{
     display: flex;
     flex-direction: row;
@@ -68,6 +84,7 @@ a{
 }
 #submit{
     background-color: aqua;
+    margin-top: 0.5em;
     padding: 10px 15px;
     border-radius: 12px;
     font-size: 20px;
@@ -75,6 +92,7 @@ a{
 }
 #reset{
     background-color: aqua;
+    margin-top: 0.5em;
     padding: 10px 23px;
     border-radius: 12px;
     font-size: 20px;
@@ -92,8 +110,24 @@ a{
         margin-bottom: 1%;
         font-weight: 500;
     }
+    input{
+        border: 1px;
+        border-radius: 8px;
+    }
+    #firstname,#lastname,#email,#linkedin{
+        width: 20%;
+    }
+    textarea{
+        border: 1px;
+        border-radius: 10px;
+        width: 30%;
+    }
+    .textarea{
+        display: flex;
+        flex-direction: column;
+    }
     .detail{
-        display: inline-block;    
+        display: block;    
     }
     #email{
         margin-top: 15px;
